@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50px;
+  /*pointer-events: none;*/
+}
+
+.grid-item {
+  width: 70px;
+  height: 70px;
+}
+.item1 {
+  width: 70px;
+  height: 70px;
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+  align-self: flex-start;
+}
+
+.item2 {
+  grid-row: 1 / 4;
+  grid-column: 3 / span 3;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: grid; 
+   /* display: inline-grid; */
+   grid-template-columns: auto auto auto auto auto auto;
+   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100vw;
+}
+
+.App-link {
+  color: #6094A0;
+}
+
